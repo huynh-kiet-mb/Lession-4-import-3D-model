@@ -54,6 +54,8 @@ const animate = () => {
   // Chúng ta thêm đk kiểm tra mixer khi mixer có dữ liệu từ action 3D thì
   // mới thực hiện update action 3D theo model
   if(mixer){
+    // Phương thức clock.getDelta dùng để lấy dữ liệu time action trong model
+    // và đưa vào model trong threeJS đúng y chang như z
     mixer.update(clock.getDelta());
   }
 
